@@ -41,10 +41,13 @@ const Registrar = () => {
                 onBack={() => window.history.back()}
                 title="Procedimentos"
             >
-            <Descriptions size="small" column={2}>
+            <Descriptions size="small" column={3}>
                 <Descriptions.Item label="Nome">{procedimento.nome}</Descriptions.Item>
                 <Descriptions.Item label="Valor Total">
                     <a>{formatter.format(procedimento.valor)}</a>
+                </Descriptions.Item>
+                <Descriptions.Item label="Comissão do Profissional">
+                    <a>{formatter.format(procedimento.comissao)}</a>
                 </Descriptions.Item>
                 <Descriptions.Item label="Serviços">
                     <Layout className="layout">
