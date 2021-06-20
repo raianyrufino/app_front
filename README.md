@@ -13,10 +13,6 @@ git clone https://github.com/raianyrufino/desafio_front_mesha
 
 ## Ambiente de Desenvolvimento
 1. Execute `npm start` para iniciar o servidor local.
-2. `npm test` para executar os testes.
-
-## Ambiente de Produção
-1. Execute `npm run build`.
 
 ## Estrutura de pastas
 ```
