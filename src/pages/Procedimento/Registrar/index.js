@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Button, Form, Select, Input } from 'antd';
-import MaskedInput from 'antd-mask-input'
 import {
   getAll as getAllServicos,
 } from '../../../store/modules/servico/actions';

@@ -1,10 +1,10 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { Layout, Table } from 'antd';
 
 import {
-  getAll,
+  getAllWithPagination,
 } from '../../../store/modules/servico/actions';
 
 const { Content } = Layout;
@@ -14,8 +14,12 @@ export default function Listar() {
 
   const { Column } = Table;
 
+  const [page, setPage] = useState(1);
+
   const {
     servicos,
+    current_page,
+    total
   } = useSelector(state => state.servico);
 
   let locale = {
@@ -31,12 +35,12 @@ export default function Listar() {
 
   useEffect(() => {
     dispatch(
-      getAll()
+      getAllWithPagination(page)
     );
-  }, []);
+  }, [page]);
 
   useEffect(() => {
-    dispatch(getAll());
+    dispatch(getAllWithPagination(1));
   }, []);
 
   return (
@@ -46,6 +50,9 @@ export default function Listar() {
                 locale={locale}
                 dataSource={servicos}  
                 pagination={{
+                  current: current_page,
+                  onChange: setPage,
+                  total: total,
                   defaultPageSize: 10,
                   showSizeChanger: false,
                 }}  
