@@ -29,7 +29,7 @@ export default function PageContent({ children }) {
           marginTop: '1px',
         }}
       >
-        Produzido pela Mesha Technology <CopyrightOutlined /> 
+        Produzido por Raiany Rufino<CopyrightOutlined /> 
       </Footer>
     </Layout>
   </>

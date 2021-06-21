@@ -4,9 +4,9 @@ Repositório do front-end da aplicação feita no desafio da Mesha
 
 1. Faça o clone desse repositório;
 ```
-git clone https://github.com/raianyrufino/desafio_front_mesha
+git clone https://github.com/raianyrufino/desafio_front
 ```
-2. Acesse a raiz do projeto `cd desafio_front_mesha`;
+2. Acesse a raiz do projeto `cd desafio_front`;
 3. Faça uma cópia do env `cp .env.example .env` e configure a URL da API;
 4. Instale o NPM `apt-get install npm -y`
 5. Execute `npm install` para instalar as dependências;
