@@ -1,5 +1,3 @@
-Repositório do front-end da aplicação feita no desafio da Mesha
-
 ## Instalação e configuração
 
 1. Faça o clone desse repositório;
